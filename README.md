@@ -10,12 +10,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.0"><img src="assets/badges/version.svg" alt="Version 1.0.0"></a>
+  <a href="https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.1"><img src="assets/badges/version.svg" alt="Version 1.0.1"></a>
   <a href="SKILL.md"><img src="assets/badges/format.svg" alt="Format: Codex skill"></a>
   <a href="LICENSE"><img src="assets/badges/license.svg" alt="License: MIT"></a>
 </p>
 
-**Version 1.0.0** · [Release notes / 发布说明](https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.0) · **[Download ZIP / 下载](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.0/easyeda-schematic-style-v1.0.0.zip)**
+**Version 1.0.1** · [Release notes / 发布说明](https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.1) · **[Download ZIP / 下载](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
 
 Click a language heading to expand or collapse its guide.  
 点击语言标题展开或收起正文。
@@ -47,7 +47,9 @@ This package contains instructions and reference guides, with no bundled MCP ser
 
 ### 2. Download and install
 
-**[Download easyeda-schematic-style-v1.0.0.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.0/easyeda-schematic-style-v1.0.0.zip)**
+**[Download easyeda-schematic-style-v1.0.1.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
+
+The installation ZIP contains only `SKILL.md` and `references/` inside `easyeda-schematic-style/`. README files, contribution instructions, badges, and repository configuration remain in the source repository.
 
 Extract the ZIP and copy the **complete** `easyeda-schematic-style` folder to **one** location below. Choose a user-level location to reuse the skill across projects.
 
@@ -153,7 +155,7 @@ The skill focuses on schematic presentation. PCB routing, component selection, a
 
 <a id="guides"></a>
 
-## Guides and package files
+## Guides and repository files
 
 | File | Purpose |
 |---|---|
@@ -166,26 +168,16 @@ The skill focuses on schematic presentation. PCB routing, component selection, a
 The skill entry point, reference guides, and contribution guide are currently in English.
 
 <details>
-<summary><strong>View the complete folder structure</strong></summary>
+<summary><strong>View the installation folder structure</strong></summary>
 
 ```text
 <skills-directory>/
 └── easyeda-schematic-style/
     ├── SKILL.md
-    ├── README.md
-    ├── README.zh-CN.md
-    ├── CONTRIBUTING.md
-    ├── LICENSE
-    ├── .gitignore
-    ├── .gitattributes
-    ├── assets/
-    │   └── badges/
-    │       ├── version.svg
-    │       ├── format.svg
-    │       └── license.svg
     └── references/
         ├── schematic-style-guide.md
-        └── easyeda-api-notes.md
+        ├── easyeda-api-notes.md
+        └── LICENSE.md
 ```
 
 </details>
@@ -200,7 +192,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Use synthetic examples and keep project 
 
 ## Author and license
 
-Copyright © 2026 **KeeganKei**. This skill package is licensed under the [MIT License](LICENSE).
+Copyright © 2026 **KeeganKei**. This skill package is licensed under the [MIT License](LICENSE). The installation ZIP includes the same license in `references/LICENSE.md`.
 
 </details>
 
@@ -229,7 +221,9 @@ Copyright © 2026 **KeeganKei**. This skill package is licensed under the [MIT L
 
 ### 2. 下载并安装
 
-**[下载 easyeda-schematic-style-v1.0.0.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.0/easyeda-schematic-style-v1.0.0.zip)**
+**[下载 easyeda-schematic-style-v1.0.1.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
+
+安装 ZIP 的 `easyeda-schematic-style/` 文件夹内仅包含 `SKILL.md` 和 `references/`。README、贡献指南、徽章及仓库配置文件保留在源码仓库中。
 
 解压 ZIP 后，将**完整的** `easyeda-schematic-style` 文件夹复制到下列**一个**位置。需要跨工程复用时，选择用户级目录。
 
@@ -334,7 +328,7 @@ Codex 通常会自动发现技能变化；若未出现，请重启 Codex。在 C
 
 <a id="zh-guides"></a>
 
-## 指南与文件
+## 指南与仓库文件
 
 | 文件 | 用途 |
 |---|---|
@@ -347,26 +341,16 @@ Codex 通常会自动发现技能变化；若未出现，请重启 Codex。在 C
 技能入口、参考指南和贡献指南目前使用英文。
 
 <details>
-<summary><strong>查看完整文件结构</strong></summary>
+<summary><strong>查看安装目录结构</strong></summary>
 
 ```text
 <skills-directory>/
 └── easyeda-schematic-style/
     ├── SKILL.md
-    ├── README.md
-    ├── README.zh-CN.md
-    ├── CONTRIBUTING.md
-    ├── LICENSE
-    ├── .gitignore
-    ├── .gitattributes
-    ├── assets/
-    │   └── badges/
-    │       ├── version.svg
-    │       ├── format.svg
-    │       └── license.svg
     └── references/
         ├── schematic-style-guide.md
-        └── easyeda-api-notes.md
+        ├── easyeda-api-notes.md
+        └── LICENSE.md
 ```
 
 </details>
@@ -381,6 +365,6 @@ Codex 通常会自动发现技能变化；若未出现，请重启 Codex。在 C
 
 ## 作者与许可证
 
-版权所有 © 2026 **KeeganKei**。本技能包采用 [MIT 许可证](LICENSE)。
+版权所有 © 2026 **KeeganKei**。本技能包采用 [MIT 许可证](LICENSE)。安装 ZIP 在 `references/LICENSE.md` 中附带相同的许可证。
 
 </details>
