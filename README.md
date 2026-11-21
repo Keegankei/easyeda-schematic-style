@@ -10,12 +10,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.1"><img src="assets/badges/version.svg" alt="Version 1.0.1"></a>
+  <a href="https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.1.0"><img src="assets/badges/version.svg" alt="Version 1.1.0"></a>
   <a href="SKILL.md"><img src="assets/badges/format.svg" alt="Format: Codex skill"></a>
   <a href="LICENSE"><img src="assets/badges/license.svg" alt="License: MIT"></a>
 </p>
 
-**Version 1.0.1** · [Release notes / 发布说明](https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.0.1) · **[Download ZIP / 下载](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
+**Version 1.1.0** · [Release notes / 发布说明](https://github.com/Keegankei/easyeda-schematic-style/releases/tag/v1.1.0) · **[Download ZIP / 下载](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.1.0/easyeda-schematic-style-v1.1.0.zip)**
 
 Click a language heading to expand or collapse its guide.  
 点击语言标题展开或收起正文。
@@ -30,6 +30,8 @@ Click a language heading to expand or collapse its guide.
 [Get started](#get-started) · [Features](#features) · [Examples](#examples) · [Verification](#verification) · [Guides](#guides) · [License](#license)
 
 A reusable agent skill for drawing, organizing, and reviewing **EasyEDA Professional schematics**. Follow a reference sheet's visual style or use project defaults while preserving the electrical design and staying within the authorized editing scope.
+
+Version 1.1.0 adds a workflow for learning from a manual redraw. It covers local circuit paths, short supply branches and verification of test points and DNP parts against physical pin nets and exported BOMs.
 
 > **A reference sheet is optional.** Start with an existing circuit and a sheet name; the included guide supplies layout and typography principles.
 
@@ -47,7 +49,7 @@ This package contains instructions and reference guides, with no bundled MCP ser
 
 ### 2. Download and install
 
-**[Download easyeda-schematic-style-v1.0.1.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
+For **1.1.0**, copy `SKILL.md` and `references/` from this source folder into an `easyeda-schematic-style` folder at the installation location below. The packaged version is available as **[easyeda-schematic-style-v1.1.0.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.1.0/easyeda-schematic-style-v1.1.0.zip)**
 
 The installation ZIP contains only `SKILL.md` and `references/` inside `easyeda-schematic-style/`. README files, contribution instructions, badges, and repository configuration remain in the source repository.
 
@@ -205,6 +207,8 @@ Copyright © 2026 **KeeganKei**. This skill package is licensed under the [MIT L
 
 一套用于绘制、整理和检查 **EasyEDA 专业版原理图**的可复用智能体技能。采用参考图页的视觉风格或工程默认设置，同时保留电气设计，并在授权范围内进行编辑。
 
+1.1.0 支持从人工定稿中提炼局部接线与布局方式。指南说明了怎样用就近电源符号收短独立支路、保留反馈与去耦关系，以及怎样用引脚网表和导出 BOM 复核测试点及未装器件。
+
 > **参考图页可选。** 从已有电路和图页名称开始即可；技能内的指南提供布局与文字排版原则。
 
 <a id="zh-get-started"></a>
@@ -221,7 +225,7 @@ Copyright © 2026 **KeeganKei**. This skill package is licensed under the [MIT L
 
 ### 2. 下载并安装
 
-**[下载 easyeda-schematic-style-v1.0.1.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.0.1/easyeda-schematic-style-v1.0.1.zip)**
+安装 **1.1.0** 时，将当前源码的 `SKILL.md` 和 `references/` 一并复制到下表安装位置的 `easyeda-schematic-style` 文件夹。也可下载本版安装包 **[easyeda-schematic-style-v1.1.0.zip](https://github.com/Keegankei/easyeda-schematic-style/releases/download/v1.1.0/easyeda-schematic-style-v1.1.0.zip)**
 
 安装 ZIP 的 `easyeda-schematic-style/` 文件夹内仅包含 `SKILL.md` 和 `references/`。README、贡献指南、徽章及仓库配置文件保留在源码仓库中。
 

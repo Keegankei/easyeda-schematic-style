@@ -10,6 +10,7 @@ Use a clear hierarchy: **functional region → core device → pins and supporti
 - Place headings above their regions. Allow enough room around core devices for complete supporting circuits and annotations before reducing unused space.
 - Align repeated circuits and related components horizontally or vertically. Do not shrink a drawing by overlapping text or hiding required labels.
 - Retain the current border and title block. Check actual dimensions and usable drawing area rather than relying on a paper-size label.
+- Place an interface summary in the free space left by the circuit. A right-hand column suits a narrow circuit. A lower block can keep a wider circuit together. Reserve the full title-block footprint. After resizing a frame, compare its actual width and height with the size printed in the title block.
 - Schematic placement communicates connections; it does not prescribe PCB placement.
 
 ## 2. Local wiring
@@ -27,6 +28,8 @@ These conventions express existing or explicitly designed connections. They do n
 | Long-distance or cross-sheet connection | Use consistent net names or the project's port convention. Add direction and destination notes when useful. |
 
 Prefer orthogonal wiring and avoid unnecessary detours. Make T-junctions identifiable and minimize crossings between different nets. Verify connectivity from the actual netlist rather than color or visual contact alone.
+
+A bank of adjacent bypass capacitors can share a short pair of rails. Independent pull-ups may each terminate in a local supply symbol. A reader should be able to trace each signal through its resistor to the intended rail at a glance. Keep the electrically significant path visible when the topology itself explains operation, such as a feedback tap or crystal load return.
 
 Keep supply and ground symbols near their branches to avoid long loops around entire regions. Orient symbols to fit the drawing while preserving their names and electrical meaning. Formatting does not determine whether grounds should be split or connected at a single point.
 
@@ -51,6 +54,8 @@ When reference sheets are available, inspect both native properties and rendered
 | Reference designator, value, or part name | Size, orientation, and relative position | Near the editor's normal annotation size, readable at detail scale |
 | Net or supply name | Visible property, color, and orientation | Follow the theme and use consistent treatment |
 | Wire | Width, line style, color, or inheritance | Follow project defaults and keep junctions clear |
+
+For a user-edited reference, distinguish genuine placement, routing and annotation changes from inherited typography, page framing and rendering defaults. Compare the same board and sheet at the same scale. Check several independent regions before carrying a preference to other sheets. Shorter orthogonal line length and more local power symbols help confirm which layout choices recur across the reference sheets.
 
 Use the editor's size definitions. Do not directly convert them to print points or PCB millimeters. Recheck text bounds after changing sizes, especially for multiline notes, long part names, and text near the title block.
 

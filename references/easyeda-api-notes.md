@@ -34,6 +34,7 @@ The following names are useful documentation search terms. Confirm current signa
 - Determine replacement wires from actual connectivity, not proximity alone. Check shared branches and user annotations separately.
 - Connect wires to the intended pins and avoid NC pins, unintended overlaps, and crossings between different nets. A wire at a pin must actually meet that pin; a nearby matching label does not prove contact.
 - After creating a named wire, read back its name attribute before adjusting placement or visibility. Do not repeatedly add independent labels to compensate for an unchecked creation failure.
+- For a rail split into several labelled stubs, verify the physical pin net at **each** stub in the board export. Some editor versions can render a detached label and a wire-owned net name identically. Inspect the attribute parent and the actual wire net if the export gives a generated single-terminal net. A neighbouring branch with the same printed name may still be connected correctly.
 - Keep supply or ground flags consistent with their wire nets. After replacing or moving a component, inspect its old location for residual wires and flags.
 - Preserve the project's ground topology. Non-electrical interface summaries do not add electrical branches.
 
@@ -52,3 +53,10 @@ Compare actual nets before and after editing using stable component identities a
 Save and export whole-sheet and detailed views. Check for overlap, duplicates, out-of-frame content, and dangling endpoints. Report the checks actually performed and unresolved findings, keeping presentation verification distinct from circuit-design review.
 
 Reusable automation obtains IDs and paths from the current session. Do not embed real project exports, credentials, personal directories, or fixed session identifiers. Use minimal synthetic examples when publishing demonstrations.
+
+## 6. Reviewing a manual edit and assembly cleanup
+
+- Compare the issued revision and the current saved project at board, sheet and physical-pin level. Key devices by a stable identity within each board. If a redrawn part acquired a new ID and designator, match its function, package, value and terminal nets. Report any ambiguous match. Record a nonpolar terminal swap separately from a change to the connected networks.
+- Find potential test points and DNP (do-not-populate) parts in placed symbols using designator, part or footprint identity, assembly fields and functions. Trace each former instance in the current board and inspect branches or NC markers left at its old pins. An unused library definition, a debug connector, a fitted configuration link and a board-edge contact carry different meanings. Check PCB instances when a board layout exists, and state the coverage for schematic-only boards.
+- Reconcile actual BOM designators and quantities **per board** against the current inclusion flags. A header-only export or a list containing only excluded items may indicate export filter settings. A zero quantity in a file does not establish that a schematic part was deleted. Report what was removed, what remains and why.
+- For a subsequent repair, re-read the affected physical pin nets and ERC against the initial finding. Keep the before-and-after evidence labelled by revision. Final counts and unresolved findings refer to the last verified snapshot.
